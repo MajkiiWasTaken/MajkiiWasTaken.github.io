@@ -68,18 +68,17 @@ a:hover {
     color: var(--accent);
 }
 
-.header-links {
-    margin-top: 25px;
-    text-align: center;
-}
-
 .header-links a {
     margin: 0 8px;
     font-weight: 600;
 }
 
-.header-links span {
+.header-links > span {
     color: #3b4654;
+}
+
+.header-links a span {
+    color: inherit;
 }
 
 .header-links i {
@@ -123,6 +122,25 @@ a:hover {
     letter-spacing: 5px;
     font-size: 0.75rem;
     margin-bottom: 18px;
+}
+
+.project-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.project-gif {
+    width: 350px;
+    max-width: 100%;
+    border-radius: 12px;
 }
 
 .project h3 {
@@ -478,4 +496,33 @@ footer img {
 html,
 body {
     overflow-x: hidden;
+}
+
+.language-switch {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    z-index: 2;
+}
+
+.language-switch button {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-family: inherit;
+    margin-left: 6px;
+}
+
+.language-switch button:hover {
+    background: rgba(0, 255, 156, 0.1);
+}
+.project-gif {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 25px 0;
+    border-radius: 12px;
 }
