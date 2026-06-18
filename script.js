@@ -103,7 +103,7 @@ const commands = {
         "Available commands: help, whoami, projects, skills, contact",
 
     whoami:
-        "Computer Science Student | C# / C / C++ Developer | V2X & Embedded",
+        "Software Developer | C# / C / C++ Developer | V2X & Embedded",
 
     projects:
         "V2XController, MajkLib, OBD-DataReader, and more. Visit my GitHub for details.",
