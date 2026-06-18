@@ -10,7 +10,8 @@
 <body>
 
     <header>
-        <h1>Hello, I'm Michal</h1>
+        <canvas id="matrix"></canvas>
+        <h1><span id="typewriter"></span><span class="cursor">_</span></h1>
 
         <p>
             Computer Science Student passionate about C#, V2X systems,
@@ -45,6 +46,7 @@
             </a>
         </div>
     </header>
+
 
     <section>
         <h2>About Me</h2>
@@ -159,6 +161,32 @@
     </section>
 
     <section>
+        <h2>Currently Working On</h2>
+        <div class="terminal-log">
+            <p><span>michal@majkweb:~$</span> cat current_projects.txt</p>
+
+            <p>
+                <span>[V2XController]</span><br>
+                Expanding real-time CAM message processing, vehicle simulation,
+                advanced map editing tools, and Protocol Buffers integration.
+            </p>
+
+            <p>
+                <span>[MajkLib]</span><br>
+                Building additional utilities and expanding the library's functionality.
+            </p>
+
+            <p>
+                <span>[Future]</span><br>
+                Exploring new projects in V2X, embedded systems,
+                and low-level software development.
+            </p>
+
+            <p><span>michal@majkweb:~$</span> _</p>
+        </div>
+    </section>
+
+    <section>
         <h2>Experience</h2>
 
         <p>
@@ -215,18 +243,6 @@
     </section>
 
     <section>
-        <h2>Currently Working On</h2>
-
-        <ul>
-            <li>Expanding V2XController with real-time CAM message processing,
-            vehicle simulation, advanced map editing tools,
-            and Protocol Buffers integration.</li>
-            <li>Building out MajkLib with additional utilities and features.</li>
-            <li>Exploring new projects in the V2X and embedded systems space.</li>
-        </ul>
-    </section>
-
-    <section>
         <h2>GitHub Stats</h2>
 
         <div class="github-stats">
@@ -238,9 +254,31 @@
                 src="https://github-readme-stats.vercel.app/api/top-langs/?username=MajkiiWasTaken&layout=compact&theme=dark&hide_border=true&card_width=400"
                 alt="Top Languages">
         </div>
+
+        <h3>Contribution Activity</h3>
+
+        <img
+            src="https://ghchart.rshah.org/4da6ff/MajkiiWasTaken"
+            alt="GitHub Contribution Graph"
+            class="contribution-graph">
     </section>
 
     <section>
+        <h2>Interactive Terminal</h2>
+
+        <div class="terminal-log">
+            <div id="terminal-output">
+                Type "help" to see available commands.
+            </div>
+
+            <div class="terminal-input-line">
+                <span>michal@majkweb:~$</span>
+                <input id="terminal-input" autocomplete="off">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
         <h2>Contact</h2>
 
         <p>
@@ -262,19 +300,27 @@
         <p>
             <i class="fa-solid fa-envelope"></i>
             Email:
-            <a href="mailto:msvrcek15@gmail.com">
+            <a id="email-link" href="mailto:msvrcek15@gmail.com">
                 msvrcek15@gmail.com
             </a>
         </p>
     </section>
 
     <footer>
-        <p>
-            © 2026 MajkWeb | Built with ❤️ by Michal Švrček
+        <p>© 2026 MajkWeb | Built with ❤️ by Michal Švrček</p>
+        <p class="visitor-line">
+            <span>Visitors:</span>
+            <img
+                src="https://visitor-badge.laobi.icu/badge?page_id=MajkiiWasTaken.majkweb"
+                alt="Visitors">
         </p>
+        <p id="uptime"></p>
     </footer>
 
-    <script src="script.js"></script>
+    <button id="back-to-top" title="Back to top">
+        Back to Top
+    </button>
 
+    <script src="script.js"></script>
 </body>
 </html>
