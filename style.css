@@ -35,3 +35,19 @@ footer {
     padding: 30px;
     color: #888;
 }
+
+.project h3 a {
+    color: white;
+    text-decoration: none;
+}
+
+.project h3 a:hover {
+    text-decoration: underline;
+}
+
+.status {
+    font-size: 0.7em;
+    color: #888;
+    font-weight: normal;
+    margin-left: 8px;
+}
