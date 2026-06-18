@@ -1,57 +1,280 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MajkWeb</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+
     <header>
         <h1>Hello, I'm Michal</h1>
-        <p>C# Developer | Computer Science Student | Creating interesting projects</p>
+
+        <p>
+            Computer Science Student passionate about C#, V2X systems,
+            embedded development, and building practical software solutions.
+        </p>
+
+        <div class="header-links">
+            <a href="#projects">
+                <i class="fa-solid fa-code"></i>
+                Projects
+            </a>
+
+            <span>|</span>
+
+            <a href="https://github.com/MajkiiWasTaken" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+            </a>
+
+            <span>|</span>
+
+            <a href="#contact">
+                <i class="fa-solid fa-envelope"></i>
+                Contact
+            </a>
+
+            <span>|</span>
+
+            <a href="Michal_Svrcek_CV.pdf" target="_blank">
+                <i class="fa-solid fa-file-arrow-down"></i>
+                CV
+            </a>
+        </div>
     </header>
 
     <section>
         <h2>About Me</h2>
+
         <p>
-            I'm studying computer science and developing applications in C#, C, WPF, and other technologies.
-            I enjoy learning new things and working on my own projects.
+            I'm a computer science student focused on C#, C, C++, WPF,
+            V2X systems, and embedded development.
+            I enjoy building practical projects, learning low-level concepts,
+            and turning ideas into working software.
         </p>
     </section>
 
     <section>
+        <h2>Skills</h2>
+
+        <div class="skills">
+            <span>C#</span>
+            <span>.NET</span>
+            <span>WPF</span>
+            <span>C</span>
+            <span>C++</span>
+            <span>Git</span>
+            <span>OpenStreetMap</span>
+            <span>Protocol Buffers</span>
+            <span>V2X</span>
+            <span>CAM Messages</span>
+            <span>Linux</span>
+            <span>Embedded Systems</span>
+        </div>
+    </section>
+
+    <section id="projects">
         <h2>My Projects</h2>
 
-       <div class="project">
-        <h3>
-            <a href="https://github.com/MajkiiWasTaken/V2XController" target="_blank">
-                V2XController
-            </a>
-            <span class="status">Not released yet</span>
-        </h3>
-        <p>WPF application for working with maps, OSM tiles, and vehicle simulation.</p>
-    </div>
+            <p>
+                Here are some of the projects I've worked on, showcasing my interests
+                in desktop development, V2X systems, embedded technologies, and low-level programming.
+            </p>
 
         <div class="project">
             <h3>
-                <a href="https://github.com/MajkiiWasTaken/MajkLib" target="_blank">
-                    MajkLib
-                </a>
+                <i class="fa-solid fa-map-location-dot"></i>
+                V2X Controller
+
+                <span class="status">
+                    Not released yet
+                </span>
             </h3>
-            <p>Lightweight utility library written in C.</p>
+
+            <p>
+                Advanced C# WPF application for traffic visualization and V2X systems.
+                It features OpenStreetMap tile rendering, interactive map editing with activation zones,
+                XML/CSV import and export, timeline-based replay, real-time vehicle simulation,
+                Protocol Buffers message processing, CAM message decoding, and live visualization
+                of vehicle positions directly on the map.
+            </p>
+
+            <div class="project-links">
+                <a class="project-button"
+                href="https://github.com/MajkiiWasTaken/V2XController"
+                target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                </a>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>
+                <i class="fa-solid fa-book"></i>
+                MajkLib
+            </h3>
+
+            <p>
+                Lightweight utility library written in pure C, designed to simplify low-level application development while exposing the underlying concepts of system programming.
+            </p>
+
+            <div class="project-links">
+                <a class="project-button"
+                href="https://github.com/MajkiiWasTaken/MajkLib"
+                target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                </a>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>
+                <i class="fa-solid fa-car-side"></i>
+                OBD Data Reader
+            </h3>
+
+            <p>
+                Simple C++ console application for reading live vehicle diagnostics
+                and data from vehicles through the OBD-II port.
+            </p>
+
+            <div class="project-links">
+                <a class="project-button"
+                href="https://github.com/MajkiiWasTaken/OBD-DataReader"
+                target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                </a>
+            </div>
+        </div>
+
+        <p style="text-align: center; color: #888; margin-top: 30px;">
+            ...and more to come.
+        </p>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+
+        <p>
+            <strong>Software Developer (Personal Projects & Work Projects)</strong><br>
+            2024 – Present
+        </p>
+
+        <ul>
+            <li>Designed and developed desktop applications using C# and WPF.</li>
+            <li>Worked with Protocol Buffers and V2X communication systems.</li>
+            <li>Built libraries and utilities in pure C.</li>
+            <li>Developed automotive-related tools in C++.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Timeline</h2>
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-year">2024</div>
+
+                <div class="timeline-content">
+                    <ul>
+                        <li>Started studying Computer Science.</li>
+                        <li>Began developing desktop applications using C# and WPF.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2025</div>
+
+                <div class="timeline-content">
+                    <ul>
+                        <li>Started developing V2XController.</li>
+                        <li>Expanded into V2X and embedded systems projects.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2026</div>
+
+                <div class="timeline-content">
+                    <ul>
+                        <li>Created MajkLib.</li>
+                        <li>Continued improving V2XController.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Currently Working On</h2>
+
+        <ul>
+            <li>Expanding V2XController with real-time CAM message processing,
+            vehicle simulation, advanced map editing tools,
+            and Protocol Buffers integration.</li>
+            <li>Building out MajkLib with additional utilities and features.</li>
+            <li>Exploring new projects in the V2X and embedded systems space.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>GitHub Stats</h2>
+
+        <div class="github-stats">
+            <img
+                src="https://github-readme-stats.vercel.app/api?username=MajkiiWasTaken&show_icons=true&theme=dark&hide_border=true&card_width=400"
+                alt="GitHub Stats">
+
+            <img
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=MajkiiWasTaken&layout=compact&theme=dark&hide_border=true&card_width=400"
+                alt="Top Languages">
         </div>
     </section>
 
     <section>
         <h2>Contact</h2>
-        <p>GitHub: <a href="https://github.com/MajkiiWasTaken" target="_blank">MajkiiWasTaken</a></p>
+
+        <p>
+            <i class="fa-brands fa-github"></i>
+            GitHub:
+            <a href="https://github.com/MajkiiWasTaken" target="_blank">
+                MajkiiWasTaken
+            </a>
+        </p>
+
+        <p>
+            <i class="fa-brands fa-linkedin"></i>
+            LinkedIn:
+            <a href="https://linkedin.com/in/your-linkedin" target="_blank">
+                Coming Soon
+            </a>
+        </p>
+
+        <p>
+            <i class="fa-solid fa-envelope"></i>
+            Email:
+            <a href="mailto:msvrcek15@gmail.com">
+                msvrcek15@gmail.com
+            </a>
+        </p>
     </section>
 
     <footer>
-        <p>© 2026 MajkWeb</p>
+        <p>
+            © 2026 MajkWeb | Built with ❤️ by Michal Švrček
+        </p>
     </footer>
 
     <script src="script.js"></script>
+
 </body>
 </html>
