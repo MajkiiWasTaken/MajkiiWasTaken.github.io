@@ -14,67 +14,155 @@
 </head>
 <body>
 
-    <header>
+    <header class="hero">
         <canvas id="matrix"></canvas>
+
         <div class="language-switch">
             <button onclick="setLanguage('en')">EN</button>
             <button onclick="setLanguage('cz')">CZ</button>
         </div>
-        <h1><span id="typewriter"></span><span class="cursor">_</span></h1>
 
-        <p id="header-description" data-i18n="headerDescription">
-            Software Developer passionate about C#, V2X systems,
-            embedded development, and building practical software solutions.
-        </p>
+        <div class="hero-content">
+            <p class="eyebrow">C# / C / C++ / WPF / V2X / Embedded</p>
 
-        <div class="header-links">
-           <a href="#projects">
-                <i class="fa-solid fa-code"></i>
-                <span data-i18n="projectsNav">Projects</span>
-            </a>
+            <h1>
+                <span id="typewriter"></span><span class="cursor">_</span>
+            </h1>
 
-            <span class="separator">|</span>
+            <p class="hero-description" id="header-description" data-i18n="headerDescription">
+                I build desktop tools, vehicle systems and low-level experiments with C#, WPF, C/C++ and embedded Linux.
+            </p>
 
-            <a href="https://github.com/MajkiiWasTaken" target="_blank">
-                <i class="fa-brands fa-github"></i>
-                <span>GitHub</span>
-            </a>
+            <div class="hero-actions">
+                <a href="#projects" class="primary-button">
+                    <i class="fa-solid fa-code"></i>
+                    <span data-i18n="projectsNav">Projects</span>
+                </a>
 
-            <span class="separator">|</span>
+                <a href="https://github.com/MajkiiWasTaken" target="_blank" class="secondary-button">
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                </a>
 
-            <a href="#contact">
-                <i class="fa-solid fa-envelope"></i>
-                <span data-i18n="contactNav">Contact</span>
-            </a>
+                <a href="#contact" class="secondary-button">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span data-i18n="contactNav">Contact</span>
+                </a>
+                <div class="hero-random-status">
+                    <span class="status-dot"></span>
+                    <span id="random-status-text"></span>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div>
+                    <strong>3+</strong>
+                    <span>Projects</span>
+                </div>
+
+                <div>
+                    <strong>4+</strong>
+                    <span>Languages</span>
+                </div>
+
+                <div>
+                    <strong>C#</strong>
+                    <span>Primary Stack</span>
+                </div>
+
+                <div>
+                    <strong>V2X</strong>
+                    <span>Main Interest</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-card code-card">
+            <div class="code-window-top">
+                <span></span>
+                <span></span>
+                <span></span>
+                <p>Developer.cs</p>
+            </div>
+
+            <pre><code><span class="kw">public class</span> <span class="type">Dev</span>
+        {
+            <span class="kw">public string</span> Name = <span class="str">"Michal Švrček"</span>;
+            <span class="kw">public string</span> Role = <span class="str">"Software Developer"</span>;
+            <span class="kw">public string</span> MainLanguage = <span class="str">"C#"</span>;
+            <span class="kw">public bool</span> CoffeePowered = <span class="str">true</span>;
+
+            <span class="kw">public string[]</span> CurrentFocus =
+            {
+                <span class="str">"WPF"</span>,
+                <span class="str">"V2X"</span>,
+                <span class="str">"Embedded Linux"</span>
+            };
+        }</code></pre>
         </div>
     </header>
 
+    <section class="about-section">
 
-    <section>
-        <h2 data-i18n="aboutTitle">About Me</h2>
+        <div class="about-grid">
 
-        <p data-i18n="aboutText">
-            I'm a software developer focused on C#, C, C++, WPF,
-            V2X systems, and embedded development.
-            I enjoy building practical projects, learning low-level concepts,
-            and turning ideas into working software.
-        </p>
+            <div class="about-card">
+                <h2 data-i18n="aboutTitle">About Me</h2>
+
+                <p data-i18n="aboutParagraph1">
+                    I'm a software developer and Computer Science student focused on C#,
+                    WPF, V2X systems and embedded Linux.
+                </p>
+
+                <p data-i18n="aboutParagraph2">
+                    I enjoy building practical desktop applications, working with maps,
+                    vehicle communication and low-level technologies.
+                </p>
+
+                <p data-i18n="aboutParagraph3">
+                    My current projects include V2XController, MajkLib and various
+                    experiments related to Linux, hardware and automotive systems.
+                </p>
+            </div>
+        </div>
+
     </section>
+    <section class="skills-stack-section">
+        <div class="section-heading">
+            <h2 data-i18n="skillsStackTitle">Skills & Stack</h2>
+            <p data-i18n="skillsStackDescription">Technologies and areas I currently work with.</p>
+        </div>
 
-    <section>
-        <h2 data-i18n="skillsTitle">Skills</h2>
-
-        <div class="skills">
+        <div class="stack-grid">
             <span>C#</span>
             <span>.NET</span>
             <span>WPF</span>
             <span>C</span>
             <span>C++</span>
-            <span>Git</span>
-            <span>Protocol Buffers</span>
-            <span>V2X</span>
+            <span>Rust</span>
             <span>Linux</span>
-            <span>Embedded Systems</span>
+            <span>V2X</span>
+            <span>Protocol Buffers</span>
+        </div>
+        <div class="overview-skills">
+            <div class="skill-card">
+                <h3 data-i18n="desktopTitle">Desktop</h3>
+                <p data-i18n="desktopDescription">C#, .NET, WPF, XML/CSV, UI tools</p>
+            </div>
+
+            <div class="skill-card">
+                <h3 data-i18n="lowLevelTitle">Low-level</h3>
+                <p data-i18n="lowLevelDescription">C, C++, memory, data structures, utilities</p>
+            </div>
+
+            <div class="skill-card">
+                <h3 data-i18n="systemsTitle">Systems</h3>
+                <p data-i18n="systemsDescription">Linux, embedded devices, I2C, GPIO, touch controllers</p>
+            </div>
+
+            <div class="skill-card">
+                <h3 data-i18n="automotiveTitle">Automotive</h3>
+                <p data-i18n="automotiveDescription">V2X, CAM messages, OBD-II, vehicle visualization</p>
+            </div>
         </div>
     </section>
 
@@ -86,23 +174,32 @@
                 in desktop development, V2X systems, embedded technologies, and low-level programming.
             </p>
 
-        <div class="project">
-            <h3>
-                <i class="fa-solid fa-map-location-dot"></i>
-                V2X Controller
+        <div class="project project-featured">
+            <div class="project-top">
+                <div>
+                    <p class="project-kicker" data-i18n="mainProject">Main project</p>
+                    <h3>
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        V2X Controller
+                    </h3>
+                </div>
 
-                <span class="status" data-i18n="v2xStatus" data-i18n="v2xStatus">
-                    Not released yet
-                </span>
-            </h3>
+                <span class="project-status" data-i18n="v2xStatus"></span>
+            </div>
 
             <p data-i18n="v2xIntro">
-                Advanced C# WPF application for traffic visualization and V2X systems.
-                It features OpenStreetMap tile rendering, interactive map editing with activation zones,
-                XML/CSV import and export, timeline-based replay, real-time vehicle simulation,
-                Protocol Buffers message processing, CAM message decoding, and live visualization
-                of vehicle positions directly on the map.
+                A C# WPF desktop application for visualizing traffic, vehicle movement and V2X messages on an interactive OpenStreetMap canvas.
             </p>
+
+            <div class="project-tags">
+                <span>C#</span>
+                <span>WPF</span>
+                <span>.NET 8</span>
+                <span>Trams</span>
+                <span>OpenStreetMap</span>
+                <span>Protocol Buffers</span>
+                <span>CAM</span>
+            </div>
 
             <img src="img/v2x.gif" alt="V2X Demo" class="project-gif">
 
@@ -204,66 +301,33 @@
         </ul>
     </section>
 
-    <section>
+    <section class="timeline-visual">
         <h2 data-i18n="timelineTitle">Timeline</h2>
-        <div class="timeline">
 
-            <div class="timeline-item">
-                <div class="timeline-year">2024</div>
-
-                <div class="timeline-content">
-                    <ul>
-                        <li data-i18n="startedStudying">Started studying Computer Science.</li>
-                        <li data-i18n="desktopApps">Began developing desktop applications using C# and WPF.</li>
-                    </ul>
-                </div>
+        <div class="timeline-track">
+            <div class="git-card">
+                <span class="timeline-year">2024</span>
+                <h3 data-i18n="timeline2024Title">Initial Commit</h3>
+                <div class="timeline-divider"></div>
+                <p data-i18n="timeline2024Description">Started studying Computer Science and building desktop apps.</p>
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-year">2025</div>
-
-                <div class="timeline-content">
-                    <ul>
-                        <li data-i18n="v2xControllerStart">Started developing V2XController.</li>
-                        <li data-i18n="v2xExpansion">Expanded into V2X and embedded systems projects.</li>
-                    </ul>
-                </div>
+            <div class="git-card">
+                <span class="timeline-year">2025</span>
+                <h3 data-i18n="timeline2025Title">Added V2XController</h3>
+                <div class="timeline-divider"></div>
+                <p data-i18n="timeline2025Description">Started working with WPF, maps, V2X systems and vehicle visualization.</p>
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-year">2026</div>
-
-                <div class="timeline-content">
-                    <ul>
-                        <li data-i18n="majkLibCreated">Created MajkLib.</li>
-                        <li data-i18n="v2xControllerImprovement">Continued improving V2XController.</li>
-                    </ul>
-                </div>
+            <div class="git-card">
+                <span class="timeline-year">2026</span>
+                <h3 data-i18n="timeline2026Title">Expanded Tooling</h3>
+                <div class="timeline-divider"></div>
+                <p data-i18n="timeline2026Description">Created MajkLib and continued improving C#, C and embedded projects.</p>
             </div>
-
         </div>
     </section>
-
-    <section>
-        <h2 data-i18n="githubTitle">GitHub Stats</h2>
-
-        <div class="github-stats">
-            <img
-                src="https://github-readme-stats.vercel.app/api?username=MajkiiWasTaken&show_icons=true&theme=dark&hide_border=true&card_width=400"
-                alt="GitHub Stats">
-
-            <img
-                src="https://github-readme-stats.vercel.app/api/top-langs/?username=MajkiiWasTaken&layout=compact&theme=dark&hide_border=true&card_width=400"
-                alt="Top Languages">
-        </div>
-
-        <h3 data-i18n="contributionActivity">Contribution Activity</h3>
-        <img
-            src="https://ghchart.rshah.org/4da6ff/MajkiiWasTaken?bg=0d1117"
-            alt="GitHub Contribution Graph"
-            class="contribution-graph">
-    </section>
-
+    
     <section>
         <h2 data-i18n="terminalTitle">Interactive Terminal</h2>
 
@@ -279,7 +343,7 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="panel-section">
         <h2 data-i18n="contactTitle">Contact</h2>
 
         <p>

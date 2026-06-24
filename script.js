@@ -3,6 +3,7 @@ const translations = {
         projectsNav: "Projects",
         contactNav: "Contact",
         cvNav: "CV",
+        currentFocus: "Current Focus",
         v2xIntro: "Advanced C# WPF application for traffic visualization and V2X systems build on .NET 8. It features OpenStreetMap tile rendering, interactive map editing with activation zones, XML/CSV import and export, timeline-based replay, real-time vehicle simulation, Protocol Buffers message processing, CAM message decoding, and live visualization of vehicle positions directly on the map.",
         majkLibIntro: "Lightweight utility library written in pure C, designed to simplify low-level application development while exposing the underlying concepts of system programming.",
         obdIntro: "Simple C++ console application for reading live vehicle diagnostics and data from vehicles through the OBD-II port.",
@@ -31,7 +32,7 @@ const translations = {
         skillsTitle: "Skills",
         projectsTitle: "My Projects",
         projectsIntro: "Here are some of the projects I've worked on, showcasing my interests in desktop development, V2X systems, embedded technologies, and low-level programming.",
-        v2xStatus: "Not released yet",
+        v2xStatus: "In development",
         currentlyTitle: "Currently Working On",
         experienceTitle: "Experience",
         timelineTitle: "Timeline",
@@ -43,13 +44,35 @@ const translations = {
         footerText: "© 2026 MajkWeb | Built with ❤️ by Michal Švrček",
         konamiText: "Type in the Konami code to see a surprise!",
         visitors: "Visitors:",
-        present: "Present"
+        present: "Present",
+        mainProject: "Main project",
+        aboutParagraph1: "I'm a software developer and Computer Science student focused on C#, WPF, V2X systems and embedded Linux.",
+        aboutParagraph2: "I enjoy building practical desktop applications, working with maps, vehicle communication and low-level technologies.",
+        aboutParagraph3: "My current projects include V2XController, MajkLib and various experiments related to Linux, hardware and automotive systems.",
+        skillsStackTitle: "Skills & Stack",
+        skillsStackDescription: "Technologies and areas I currently work with.",
+        desktopTitle: "Desktop",
+        desktopDescription: "C#, .NET, WPF, XML/CSV, UI tools",
+        lowLevelTitle: "Low-level",
+        lowLevelDescription: "C, C++, memory, data structures, utilities",
+        systemsTitle: "Systems",
+        systemsDescription: "Linux, embedded devices, I2C, GPIO, touch controllers",
+        automotiveTitle: "Automotive",
+        automotiveDescription: "V2X, CAM messages, OBD-II, vehicle visualization",
+        timeline2024Title: "Initial Commit",
+        timeline2024Description: "Started studying Computer Science and building desktop apps.",
+        timeline2025Title: "Added V2X Controller",
+        timeline2025Description: "Started working with WPF, maps, V2X systems and vehicle visualization.",
+        timeline2026Title: "Expanded Tooling",
+        timeline2026Description: "Created MajkLib and continued improving C#, C and embedded projects."
+                
     },
 
     cz: {
         projectsNav: "Projekty",
         contactNav: "Kontakt",
         cvNav: "Životopis",
+        currentFocus: "Aktuální zaměření",
         v2xIntro: "Pokročilá aplikace v C# WPF pro vizualizaci dopravy a V2X systémů postavená na .NET 8. Obsahuje vykreslování OpenStreetMap dlaždic, interaktivní editaci map s aktivačními zónami, import a export XML/CSV, přehrávání historie, simulaci vozidel v reálném čase, zpracování zpráv Protocol Buffers, dekódování CAM zpráv a živou vizualizaci pozic vozidel přímo na mapě.",
         majkLibIntro: "Lehká utilitní knihovna napsaná v čistém C, navržená pro zjednodušení nízkoúrovňového vývoje aplikací a zároveň odhalující principy systémového programování.",
         obdIntro: "Jednoduchá konzolová aplikace v C++ pro čtení živé diagnostiky a dat z vozidel prostřednictvím OBD-II portu.",
@@ -78,7 +101,7 @@ const translations = {
         skillsTitle: "Dovednosti",
         projectsTitle: "Moje projekty",
         projectsIntro: "Tady jsou některé projekty, na kterých jsem pracoval. Ukazují můj zájem o desktopový vývoj, V2X systémy, embedded technologie a nízkoúrovňové programování.",
-        v2xStatus: "Zatím nevydáno",
+        v2xStatus: "Ve vývoji",
         currentlyTitle: "Na čem aktuálně pracuji",
         experienceTitle: "Zkušenosti",
         timelineTitle: "Časová osa",
@@ -90,9 +113,114 @@ const translations = {
         footerText: "© 2026 MajkWeb | Vytvořil s ❤️ Michal Švrček",
         konamiText: "Zadej Konami kód a objeví se překvapení!",
         visitors: "Návštěvníci:",
-        present: "Současnost"
+        present: "Současnost",
+        mainProject: "Hlavní projekt",
+        aboutParagraph1: "Jsem softwarový vývojář a student informatiky zaměřený na C#, WPF, V2X systémy a embedded Linux.",
+        aboutParagraph2: "Baví mě vytvářet praktické desktopové aplikace, pracovat s mapami, komunikací vozidel a nízkoúrovňovými technologiemi.",
+        aboutParagraph3: "Mezi mé současné projekty patří V2XController, MajkLib a různé experimenty spojené s Linuxem, hardwarem a automobilovými systémy.",
+        skillsStackTitle: "Dovednosti a technologie",
+        skillsStackDescription: "Technologie a oblasti, se kterými aktuálně pracuji.",
+        desktopTitle: "Desktop",
+        desktopDescription: "C#, .NET, WPF, XML/CSV, UI nástroje",
+        lowLevelTitle: "Nízkoúrovňové",
+        lowLevelDescription: "C, C++, paměť, datové struktury, utility",
+        systemsTitle: "Systémy",
+        systemsDescription: "Linux, embedded zařízení, I2C, GPIO, dotykové ovladače",
+        automotiveTitle: "Automotive",
+        automotiveDescription: "V2X, CAM zprávy, OBD-II, vizualizace vozidel",
+        timeline2024Title: "První kroky",
+        timeline2024Description: "Začal jsem studovat informatiku a vytvářet desktopové aplikace.",
+        timeline2025Title: "Vznik V2XControlleru",
+        timeline2025Description: "Začal jsem pracovat s WPF, mapami, V2X systémy a vizualizací vozidel.",
+        timeline2026Title: "Rozšíření projektů",
+        timeline2026Description: "Vytvořil jsem MajkLib a pokračoval ve vývoji projektů v C#, C a embedded oblasti.",
+        mainProject: "Hlavní projekt",
+        aboutParagraph1: "Jsem softwarový vývojář a student informatiky zaměřený na C#, WPF, V2X systémy a embedded Linux.",
+        aboutParagraph2: "Baví mě vytvářet praktické desktopové aplikace, pracovat s mapami, komunikací vozidel a nízkoúrovňovými technologiemi.",
+        aboutParagraph3: "Mezi mé současné projekty patří V2XController, MajkLib a různé experimenty spojené s Linuxem, hardwarem a automobilovými systémy.",
+        skillsStackTitle: "Dovednosti a technologie",
+        skillsStackDescription: "Technologie a oblasti, se kterými aktuálně pracuji.",
+        desktopTitle: "Desktop",
+        desktopDescription: "C#, .NET, WPF, XML/CSV, UI nástroje",
+        lowLevelTitle: "Nízkoúrovňové",
+        lowLevelDescription: "C, C++, paměť, datové struktury, utility",
+        systemsTitle: "Systémy",
+        systemsDescription: "Linux, embedded zařízení, I2C, GPIO, dotykové ovladače",
+        automotiveTitle: "Automotive",
+        automotiveDescription: "V2X, CAM zprávy, OBD-II, vizualizace vozidel",
+        timeline2024Title: "První kroky",
+        timeline2024Description: "Začal jsem studovat informatiku a vytvářet desktopové aplikace.",
+        timeline2025Title: "Vznik V2X Controlleru",
+        timeline2025Description: "Začal jsem pracovat s WPF, mapami, V2X systémy a vizualizací vozidel.",
+        timeline2026Title: "Rozšíření projektů",
+        timeline2026Description: "Vytvořil jsem MajkLib a pokračoval ve vývoji projektů v C#, C a embedded oblasti."
     }
 };
+
+const randomStatusTexts = {
+    en: [
+        "Currently building V2X Controller...",
+        "Debugging something that worked yesterday...",
+        "Turning coffee into code...",
+        "Fixing memory leaks...",
+        "Deploying on friday, because i like chaos...",
+        "Learning low-level things the hard way...",
+        "Making WPF behave like I want...",
+        "Thinking in classes and objects...",
+        "Reading vehicle data and pretending it is normal...",
+        "Probably fixing one small bug for three hours...",
+        "Building tools I would actually use...",
+        "Exploring embedded Linux...",
+        "Writing firmware for microcontrollers...",
+        "Forgot a semicolon somewhere...",
+        "Writing code close to hardware...",
+        "Trying not to overengineer everything...",
+        "Mapping vehicles, messages and ideas...",
+        "Compiling patience.C",
+        "One more feature before sleep..."
+    ],
+
+    cz: [
+        "Aktuálně stavím V2X Controller...",
+        "Debuguju něco, co včera fungovalo...",
+        "Převádím kafe na kód...",
+        "Opravuju memory leak...",
+        "Deployuju v pátek, protože mám rád chaos...",
+        "Učím se low-level věci tou těžší cestou...",
+        "Snažím se donutit WPF poslouchat mě...",
+        "Přemýšlím v třídách a objektech...",
+        "Čtu data z vozidel a tvářím se, že je to normální...",
+        "Opravuju malý bug už asi tři hodiny...",
+        "Stavím nástroje, které bych sám používal...",
+        "Zkoumám embedded Linux...",
+        "Píšu firmware pro mikrokontroléry...",
+        "Někde jsem zapomněl středník...",
+        "Píšu kód blízko hardwaru...",
+        "Snažím se všechno nepřeinženýrovat...",
+        "Mapuju vozidla, zprávy a nápady...",
+        "Kompiluju patience.C",
+        "Ještě jedna funkce před spaním..."
+    ]
+};
+
+const randomStatusText = document.getElementById("random-status-text");
+
+function changeRandomStatus() {
+    if (!randomStatusText) {
+        return;
+    }
+
+    const texts = randomStatusTexts[currentLanguage] || randomStatusTexts.en;
+
+    const randomIndex = Math.floor(Math.random() * texts.length);
+
+    randomStatusText.style.opacity = "0";
+
+    setTimeout(function () {
+        randomStatusText.textContent = texts[randomIndex];
+        randomStatusText.style.opacity = "1";
+    }, 250);
+}
 
 const typewriterElement = document.getElementById("typewriter");
 
@@ -121,9 +249,12 @@ function setLanguage(language) {
     typewriterIndex = 0;
     typewriterElement.textContent = "";
     typeWriter();
+    changeRandomStatus();
 }
 
 setLanguage(currentLanguage);
+changeRandomStatus();
+setInterval(changeRandomStatus, 4000);
 
 const sections = document.querySelectorAll("section");
 
