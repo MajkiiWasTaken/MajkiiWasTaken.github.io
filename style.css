@@ -1310,3 +1310,72 @@ section {
 
     opacity: 0.8;
 }
+
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        padding: 90px 16px 40px;
+        gap: 24px;
+    }
+
+    .hero-content,
+    .hero-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .code-card pre {
+        overflow-x: auto;
+        font-size: 0.75rem;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    section,
+    .about-section,
+    .skills-stack-section,
+    .timeline-visual {
+        width: auto;
+        margin: 24px 12px;
+        padding: 22px 16px;
+    }
+
+    .skills-stack-section .overview-skills,
+    .overview-skills,
+    .timeline-track {
+        grid-template-columns: 1fr;
+    }
+
+    .project-top {
+        flex-direction: column;
+    }
+
+    .project-status {
+        align-self: flex-start;
+    }
+
+    .project-gif {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .terminal-log {
+        padding: 16px;
+        overflow-x: auto;
+    }
+
+    .language-switch {
+        top: 12px;
+        right: 12px;
+    }
+}
