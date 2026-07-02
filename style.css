@@ -1429,42 +1429,9 @@ section {
     }
 }
 
-@media (max-width: 768px) {
-    .timeline-track,
-    .git-card,
-    .project,
-    .terminal-log,
-    .code-card,
-    .hero-random-status {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-    }
-
-    .hero-random-status {
-        white-space: normal;
-    }
-
-    .code-card pre {
-        overflow-x: auto;
-    }
-}
-
 img,
 canvas,
 pre,
 code {
-    max-width: 100%;
-}
-
-* {
-    outline: none;
-}
-
-body * {
-    outline: 1px solid transparent;
-}
-
-body *:where(:not(script)) {
     max-width: 100%;
 }
